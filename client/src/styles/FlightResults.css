@@ -1,0 +1,237 @@
+.flight-results-container {
+  background-color: #121212;
+  color: #e0e0e0;
+  min-height: 100vh;
+  padding: 80px 20px 20px; /* top padding to clear fixed navbar */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #61dafb;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+/* Search bar container */
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.search-bar input[type="text"],
+.search-bar input[type="date"] {
+  background-color: #222;
+  border: none;
+  border-radius: 10px;
+  color: #eee;
+  padding: 14px 18px;
+  font-size: 1.05rem;
+  outline: none;
+  flex: 1 1 200px;
+  min-width: 140px;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar input::placeholder {
+  color: #999;
+}
+
+.search-bar input:focus {
+  background-color: #333;
+  box-shadow: 0 0 8px #1e90ff;
+  color: #fff;
+}
+
+/* Flights grid - stacked on small, grid on larger */
+.flight-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+/* Flight card */
+.flight-card {
+  background: #1e1e1e;
+  border-radius: 14px;
+  padding: 18px 22px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(30, 144, 255, 0.28);
+  transition: transform 0.15s ease, box-shadow 0.3s ease;
+  user-select: none;
+  outline: none;
+}
+
+.flight-card:hover,
+.flight-card:focus-visible {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(30, 144, 255, 0.6);
+}
+
+/* Flight card inner layout */
+.flight-card > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #61dafb;
+  gap: 12px;
+}
+
+.flight-card > div:first-child > div:last-child {
+  margin-left: 12px;
+  white-space: nowrap;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #999;
+}
+
+.flight-card > div:nth-child(2) {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+.flight-card > div:nth-child(3) {
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #1e90ff;
+}
+
+/* Flight details page */
+.flight-details {
+  padding: 20px;
+  background: #1e1e1e;
+  border-radius: 14px;
+  max-width: 600px;
+  margin: 40px auto 20px;
+  box-shadow: 0 2px 8px rgba(30, 144, 255, 0.4);
+  box-sizing: border-box;
+}
+
+.flight-details h2 {
+  color: #61dafb;
+  margin-bottom: 16px;
+}
+
+.flight-details p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.flight-details a {
+  color: #1a73e8;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.flight-details button {
+  background: transparent;
+  border: 2px solid #61dafb;
+  color: #61dafb;
+  padding: 8px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.flight-details button:hover {
+  background-color: #61dafb;
+  color: #121212;
+}
+
+/* Responsive grid */
+@media (min-width: 600px) {
+  .flight-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+/* Medium screens */
+@media (max-width: 768px) {
+  .flight-results-container {
+    padding: 100px 16px 16px;
+    max-width: 100%;
+  }
+
+  .flight-details {
+    max-width: 100%;
+    margin: 20px 12px 20px;
+    padding: 16px 12px;
+  }
+}
+
+/* Mobile specific tweaks */
+@media (max-width: 480px) {
+  .flight-results-container {
+    padding: 120px 12px 12px;
+  }
+
+  .flight-details {
+    margin: 16px 12px;
+    padding: 12px 10px;
+  }
+
+  .flight-details button {
+    width: 100%;
+  }
+
+  /* Flight cards smaller padding to avoid edge touch */
+  .flight-card {
+    padding: 12px 14px;
+  }
+
+  /* Search bar stacked and full width inputs */
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-bar input[type="text"],
+  .search-bar input[type="date"] {
+    flex: 1 1 100%;
+    min-width: auto;
+    margin-bottom: 12px;
+    padding: 12px 14px;
+  }
+
+  /* Flight card inner layout stacking */
+  .flight-card > div:first-child {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .flight-card > div:first-child > div:last-child {
+    margin-left: 0;
+    font-size: 0.9rem;
+    color: #999;
+    max-width: 100%;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+  }
+
+  .flight-card > div:first-child {
+    font-size: 1rem;
+  }
+
+  .flight-card > div:nth-child(2) {
+    font-size: 0.85rem;
+  }
+
+  .flight-card > div:nth-child(3) {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "country": "India",
+    "airports": [
+      { "city": "Mumbai", "code": "BOM", "entityId": "95673320" },
+      { "city": "Pune", "code": "PNQ", "entityId": "128668941" },
+      { "city": "Delhi", "code": "DEL", "entityId": "95673498" },
+      { "city": "Bengaluru", "code": "BLR", "entityId": "95673351" },
+      { "city": "Hyderabad", "code": "HYD", "entityId": "128668073" },
+      { "city": "Chennai", "code": "MAA", "entityId": "95673361" }
+    ]
+  },
+  {
+    "country": "United States",
+    "airports": [
+      { "city": "New York", "code": "JFK", "entityId": "123456789" },
+      { "city": "Los Angeles", "code": "LAX", "entityId": "223344556" },
+      { "city": "Chicago", "code": "ORD", "entityId": "334455667" },
+      { "city": "Miami", "code": "MIA", "entityId": "445566778" },
+      { "city": "San Francisco", "code": "SFO", "entityId": "556677889" },
+      { "city": "Dallas", "code": "DFW", "entityId": "667788990" }
+    ]
+  },
+  {
+    "country": "Canada",
+    "airports": [
+      { "city": "Toronto", "code": "YYZ", "entityId": "556677889" },
+      { "city": "Vancouver", "code": "YVR", "entityId": "123123123" },
+      { "city": "Montreal", "code": "YUL", "entityId": "234234234" },
+      { "city": "Calgary", "code": "YYC", "entityId": "345345345" },
+      { "city": "Ottawa", "code": "YOW", "entityId": "456456456" },
+      { "city": "Edmonton", "code": "YEG", "entityId": "567567567" }
+    ]
+  },
+  {
+    "country": "United Kingdom",
+    "airports": [
+      { "city": "London Heathrow", "code": "LHR", "entityId": "667788990" },
+      { "city": "Manchester", "code": "MAN", "entityId": "678678678" },
+      { "city": "Birmingham", "code": "BHX", "entityId": "789789789" },
+      { "city": "Edinburgh", "code": "EDI", "entityId": "890890890" },
+      { "city": "Glasgow", "code": "GLA", "entityId": "901901901" },
+      { "city": "Bristol", "code": "BRS", "entityId": "912912912" }
+    ]
+  },
+  {
+    "country": "France",
+    "airports": [
+      { "city": "Paris Charles de Gaulle", "code": "CDG", "entityId": "778899001" },
+      { "city": "Orly", "code": "ORY", "entityId": "234123234" },
+      { "city": "Lyon", "code": "LYS", "entityId": "345234345" },
+      { "city": "Marseille", "code": "MRS", "entityId": "456345456" },
+      { "city": "Nice", "code": "NCE", "entityId": "567456567" },
+      { "city": "Toulouse", "code": "TLS", "entityId": "678567678" }
+    ]
+  },
+  {
+    "country": "Germany",
+    "airports": [
+      { "city": "Frankfurt", "code": "FRA", "entityId": "889900112" },
+      { "city": "Berlin", "code": "BER", "entityId": "111222333" },
+      { "city": "Munich", "code": "MUC", "entityId": "222333444" },
+      { "city": "Hamburg", "code": "HAM", "entityId": "333444555" },
+      { "city": "Düsseldorf", "code": "DUS", "entityId": "444555666" },
+      { "city": "Cologne", "code": "CGN", "entityId": "555666777" }
+    ]
+  }
+]

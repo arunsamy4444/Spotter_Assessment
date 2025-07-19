@@ -1,0 +1,115 @@
+{
+  "status": true,
+  "data": [
+    {
+      "from": "LAX",
+      "from_city": "Los Angeles",
+      "to": "JFK",
+      "to_city": "New York",
+      "price": 199.99,
+      "airline": "Delta Air Lines",
+      "flight_duration": "5h 30m",
+      "departure_at": "2025-07-22T08:00:00",
+      "arrival_at": "2025-07-22T13:30:00"
+    },
+    {
+      "from": "ORD",
+      "from_city": "Chicago",
+      "to": "ATL",
+      "to_city": "Atlanta",
+      "price": 129.49,
+      "airline": "United Airlines",
+      "flight_duration": "2h 10m",
+      "departure_at": "2025-07-21T14:15:00",
+      "arrival_at": "2025-07-21T16:25:00"
+    },
+    {
+      "from": "DFW",
+      "from_city": "Dallas",
+      "to": "DEN",
+      "to_city": "Denver",
+      "price": 154.00,
+      "airline": "American Airlines",
+      "flight_duration": "2h 20m",
+      "departure_at": "2025-07-23T10:50:00",
+      "arrival_at": "2025-07-23T13:10:00"
+    },
+    {
+      "from": "SEA",
+      "from_city": "Seattle",
+      "to": "SFO",
+      "to_city": "San Francisco",
+      "price": 112.30,
+      "airline": "Alaska Airlines",
+      "flight_duration": "2h 5m",
+      "departure_at": "2025-07-22T16:40:00",
+      "arrival_at": "2025-07-22T18:45:00"
+    },
+    {
+      "from": "MIA",
+      "from_city": "Miami",
+      "to": "LAS",
+      "to_city": "Las Vegas",
+      "price": 249.75,
+      "airline": "JetBlue",
+      "flight_duration": "5h 40m",
+      "departure_at": "2025-07-21T21:00:00",
+      "arrival_at": "2025-07-22T02:40:00"
+    },
+    {
+      "from": "BOS",
+      "from_city": "Boston",
+      "to": "ORD",
+      "to_city": "Chicago",
+      "price": 144.10,
+      "airline": "Spirit Airlines",
+      "flight_duration": "2h 50m",
+      "departure_at": "2025-07-23T07:30:00",
+      "arrival_at": "2025-07-23T10:20:00"
+    },
+    {
+      "from": "PHX",
+      "from_city": "Phoenix",
+      "to": "SEA",
+      "to_city": "Seattle",
+      "price": 169.00,
+      "airline": "Southwest Airlines",
+      "flight_duration": "3h 20m",
+      "departure_at": "2025-07-22T12:15:00",
+      "arrival_at": "2025-07-22T15:35:00"
+    },
+    {
+      "from": "CLT",
+      "from_city": "Charlotte",
+      "to": "EWR",
+      "to_city": "Newark",
+      "price": 120.55,
+      "airline": "Frontier Airlines",
+      "flight_duration": "1h 50m",
+      "departure_at": "2025-07-21T18:00:00",
+      "arrival_at": "2025-07-21T19:50:00"
+    },
+    {
+      "from": "LGA",
+      "from_city": "New York",
+      "to": "DTW",
+      "to_city": "Detroit",
+      "price": 135.25,
+      "airline": "Delta Air Lines",
+      "flight_duration": "1h 45m",
+      "departure_at": "2025-07-22T11:10:00",
+      "arrival_at": "2025-07-22T12:55:00"
+    },
+    {
+      "from": "IAH",
+      "from_city": "Houston",
+      "to": "MSP",
+      "to_city": "Minneapolis",
+      "price": 178.60,
+      "airline": "United Airlines",
+      "flight_duration": "2h 35m",
+      "departure_at": "2025-07-23T09:00:00",
+      "arrival_at": "2025-07-23T11:35:00"
+    }
+  ]
+}

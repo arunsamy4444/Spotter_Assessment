@@ -1,0 +1,131 @@
+.airport-container {
+  background-color: #121212;
+  color: #e0e0e0;
+  min-height: 100vh;
+  padding: 80px 20px 20px; /* top padding for fixed navbar */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.airport-search {
+  width: 100%;
+  max-width: 480px;
+  padding: 14px 18px;
+  margin-bottom: 24px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #222;
+  color: #eee;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.airport-search::placeholder {
+  color: #999;
+}
+
+.airport-search:focus {
+  background-color: #333;
+  box-shadow: 0 0 8px #1e90ff;
+  color: #fff;
+}
+
+.airport-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  width: 100%;
+}
+
+.airport-card {
+  background: #1e1e1e;
+  border-radius: 14px;
+  padding: 18px 22px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(30, 144, 255, 0.28);
+  transition: transform 0.15s ease, box-shadow 0.3s ease;
+  user-select: none;
+  outline: none;
+}
+
+.airport-card:hover,
+.airport-card:focus-visible {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(30, 144, 255, 0.6);
+}
+
+.airport-card h3 {
+  margin: 0 0 8px 0;
+  font-weight: 700;
+  color: #61dafb;
+  font-size: 1.25rem;
+}
+
+.country {
+  margin: 0;
+  color: #aaa;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.code {
+  margin-top: 8px;
+  font-weight: 600;
+  color: #1e90ff;
+  font-size: 1rem;
+}
+
+/* Responsive Grid */
+@media (min-width: 600px) {
+  .airport-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+
+/* Medium screens */
+@media (max-width: 768px) {
+  .airport-container {
+    padding: 100px 16px 16px;
+    max-width: 100%;
+  }
+
+  .airport-card {
+    padding: 16px 18px;
+  }
+
+  .airport-search {
+    font-size: 1.05rem;
+  }
+}
+
+/* Mobile tweaks */
+@media (max-width: 480px) {
+  .airport-container {
+    padding: 120px 12px 12px;
+  }
+
+  .airport-card {
+    padding: 14px 16px;
+  }
+
+  .airport-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .airport-search {
+    font-size: 1rem;
+    padding: 12px 14px;
+  }
+
+  .code {
+    font-size: 0.95rem;
+  }
+
+  .country {
+    font-size: 0.85rem;
+  }
+}
