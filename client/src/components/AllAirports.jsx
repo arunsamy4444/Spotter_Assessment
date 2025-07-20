@@ -109,7 +109,7 @@ const AllAirports = () => {
       <h1>List Of Airports</h1>
       <input
         type="text"
-        placeholder="Search by city, country or airport code..."
+        placeholder="Search by city ..."
         value={searchTerm}
         onChange={handleSearch}
         className="airport-search"
